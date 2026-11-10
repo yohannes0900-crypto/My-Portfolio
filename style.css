@@ -118,3 +118,17 @@ color:white;
 transform:translatey(-5px);
 }
 
+.goal-container{
+transform:translate(-5px);
+box-shadow:0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.goal-card h3{
+color:#1e3a5f;
+margin-top:0;
+}
+
+.goal-card p{
+front-size:15px;
+}
+
