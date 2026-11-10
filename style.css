@@ -1,6 +1,6 @@
 body{
   background-color: #f1f5f9;
-  font-family: 'segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin:0;
   color:#334155;
 }
@@ -121,9 +121,23 @@ color:white;
 transform:translatey(-5px);
 }
 
-.goal-container{
-transform:translate(-5px);
-box-shadow:0 8px 20px rgba(0, 0, 0, 0.1);
+.goals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.goal-card {
+    background-color: #f1f5f9;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #2563eb;
+    transition: 0.3s;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .goal-card h3{
@@ -132,7 +146,7 @@ margin-top:0;
 }
 
 .goal-card p{
-front-size:15px;
+font-size:15px;
 }
 
 .contact-btn{
@@ -175,7 +189,7 @@ color: #cbd5e1;
 
 .hero-btn{
 display:inline-block;
-backgroud-color:#2563eb;
+background-color:#2563eb;
 color:white;
 padding:12px 25px;
 border-radius:8px;
@@ -188,3 +202,64 @@ background-color:#1d4ed8;
 transform:translateY(-3px);
 }
 
+
+#about {
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-content p {
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 15px;
+    color: #cbd5e1;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+}
+
+.copyright {
+    border-top: 1px solid #334155;
+    padding-top: 15px;
+    margin-top: 20px;
+}
